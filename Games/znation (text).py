@@ -1,16 +1,8 @@
 #Project: Text-based game based on SyFy's Z Nation TV show
 
 import sys
+from zgame_functions import intro
 
-def intro():
-	print '''
-		This is an extinction scale event.
-		Three years after the first infection, national governments have fallen. 
-		You find yourself running in the Portsmouth Naval Prison.
-		There are 20 zombies running after you and Valdez.
-		You manage to run inside and close the first gate but it won't hold them for long.
-	'''
-	
 def endgame():
 	print "Thank you for playing."
 	retry = raw_input("Would you like to try again? Y or N? ")
@@ -67,5 +59,5 @@ def left_right():
 		You[yelling]: Hey Doc. If I'm not back in two minutes, tell them to leave without me.
 		'''
 
-intro()
+print intro()
 first_choice()
