@@ -9,11 +9,28 @@ def max_of_three():
 #Define a function that computes the length of a given string.
 
 def count_string():
-	print "Write whatever you want here"
-	string_length = raw_input("")
 
-	print "Number of characters in your sentence", len(string_length)
+#with len() function
 
+	print "Write something here"
+	string1 = raw_input("")
+
+	print "Number of characters in this sentence", len(string1)
+	
+#without using the built in len() function
+
+#first attempt: TypeError: cannot concatenate 'str' and 'int' objects
+	
+	print "Write more here"
+	
+	x = 0
+	
+	string2 = raw_input("")
+	
+	for x in string2:
+		x += 1
+		print "Number of characters in this sentence", x
+		
 #Write a function that takes a character (i.e. a string of length 1) and returns True if it is a vowel, False otherwise.
 
 def check_vowel():
