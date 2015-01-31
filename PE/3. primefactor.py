@@ -6,21 +6,23 @@
 #What is the largest prime factor of the number 600851475143?
 
 a = 0
+num = 1
 
 factors = []
+prime_nums = []
 
 while a < (600851475143/2):
 	a += 1
 	if 600851475143 % a == 0:
 		factors.append(a)
+print factors
 
-print factors #need to determine if factors are prime
-
-# prime_nums = []
-
-# for x in factors:
-	# if x % ___ != 0:
-		# prime_nums.append(x)
+for x in factors:
+	while num < 10:
+		num += 1
+		if x % num != 0: #checks which numbers in list are prime
+			prime_nums.append(x) #error: appends list with ones
+print prime_nums
 
 
 
