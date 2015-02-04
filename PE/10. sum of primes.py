@@ -19,9 +19,25 @@ def is_prime(n):
 	else:
 		return True
 
-list_num = []	
-		
-for num in range (2, 2000000):
+list_num1 = []	
+list_num2 = []
+list_num3 = []
+list_num4 = []
+
+for num in xrange (1, 500000):
 	if is_prime(num):
-		list_num = list_num + [num]
-print sum(list_num)
+		list_num1 = list_num1 + [num]
+		
+for num in xrange (500000, 1000000):
+	if is_prime(num):
+		list_num2 = list_num2 + [num]
+
+for num in xrange (1000000, 1500000):
+	if is_prime(num):
+		list_num3 = list_num3 + [num]
+
+for num in xrange (1500000, 2000000):
+	if is_prime(num):
+		list_num4 = list_num4 + [num]	
+		
+print sum(list_num1 + list_num2 + list_num3 + list_num4)
