@@ -4,22 +4,12 @@
 # For example: if str is "xooxxxxooxo" then the output should return false because there are 6 x's and 5 o's.
 
 def ExOh(str):
+	
+	count_x = str.count('x')
 
-	count_xo = []
-	count_x = 0
-	count_o = 0
-	
-	count_xo.append(str)
-	
-	print count_xo
-	
-	for i in count_xo:
-		if i == 'x':
-			count_x += 1
-		elif i == 'o':
-			count_o += 1
-		else:
-			return
+	count_o = str.count('o')
+	print count_o
+	print count_x
 	
 	if count_o == count_x:
 		print 'true'
