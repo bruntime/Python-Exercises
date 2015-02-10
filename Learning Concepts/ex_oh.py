@@ -6,8 +6,8 @@
 def ExOh(str):
 	
 	count_x = str.count('x')
-
 	count_o = str.count('o')
+	
 	print count_o
 	print count_x
 	
