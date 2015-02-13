@@ -24,7 +24,7 @@ while i < 100:
 
 sum_square_num = sum(squares)
 	
-print "First 10 numbers squared", squares
+print "First 100 numbers squared", squares
 
 sum_nums = sum(range(1, 101))
 
