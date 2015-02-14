@@ -5,11 +5,10 @@ def Add_Persist(num):
 
 	num_list = [int(i) for i in str(num)]
 
-	for i in num_list:
-		while i in num_list > 1:
-			sum_digits = sum(num_list)
-			num_list.append(sum_digits)
-			print sum(num_list)
+	while len(num_list) > 1:
+		sum_digits = sum(num_list)
+		num_list.append(sum_digits)
+		print sum(num_list)
 	
 number = int(raw_input("Give me a number: "))
 
