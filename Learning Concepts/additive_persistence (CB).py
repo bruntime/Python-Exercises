@@ -3,12 +3,15 @@
 
 def Add_Persist(num):
 
-	num_list = [int(i) for i in str(num)]
-
-	while len(num_list) > 1:
-		sum_digits = sum(num_list)
-		num_list.append(sum_digits)
-		print sum(num_list)
+	num_list = []
+	num_list.append(num)
+	
+	while len(num_list) > 1: #iterate until only one number left in list
+		for [int(x) for x in str(num)]: #iterate through numbers as a string, then convert back to integer
+			sum_digits = sum(num_list) #add numbers in list
+		del num_list[:] #clear empty list
+		num_list.append(sum_digits) #add new numbers to list
+		print num_list
 	
 number = int(raw_input("Give me a number: "))
 
