@@ -1,7 +1,5 @@
 # Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum. 
 
-from collections import OrderedDict
-
 def lone_sum(x, y, z):
 
 	nums = []
@@ -11,9 +9,16 @@ def lone_sum(x, y, z):
 
 	print nums
 	
-	len(nums) != len(set(nums))
+	num_set = (set(nums))
 	
-	print (set(nums))
+	print num_set
+
+	sum = 0
+	
+	for x in num_set:
+		sum += int(x)
+	
+	print sum
 	
 num1 = raw_input("Number 1: ")
 num2 = raw_input("Number 2: ")
