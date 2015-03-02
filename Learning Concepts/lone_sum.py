@@ -6,17 +6,18 @@ def lone_sum(x, y, z):
 	nums.append(x)
 	nums.append(y)
 	nums.append(z)
-
-	print nums
-	
-	num_set = (set(nums))
-	
-	print num_set
-
 	sum = 0
 	
-	for x in num_set:
-		sum += int(x)
+	print nums
+	
+	if x == y and y == z:
+		sum = 0
+	else:
+		num_set = (set(nums))
+	
+		print num_set
+		for x in num_set:
+			sum += int(x)
 	
 	print sum
 	
