@@ -18,7 +18,7 @@ second_year = int(raw_input("Year: "))
 first_date = date(first_year, first_month, first_day)
 second_date = date(second_year, second_month, second_day)
 
-total = first_date - second_date
+total = second_date - first_date
 
 print "%d days from %s to %s" %(total.days, first_date, second_date)
 
