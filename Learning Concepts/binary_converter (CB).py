@@ -9,13 +9,13 @@ def decimal_converter(num):
 		
 	binary_nums = list(num)
 	binary_convert = []
+	zero = 0
 	
 #index 0
 	if binary_nums[0] == "1":
 		place_0 = pow(2, 7)
 		binary_convert = binary_convert + [place_0]
 	elif binary_nums[0] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]
 
 #index 1
@@ -23,7 +23,6 @@ def decimal_converter(num):
 		place_1 = pow(2, 6)
 		binary_convert = binary_convert + [place_1]
 	elif binary_nums[1] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]
 
 #index 2
@@ -31,7 +30,6 @@ def decimal_converter(num):
 		place_2 = pow(2, 5)
 		binary_convert = binary_convert + [place_2]
 	elif binary_nums[2] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]
 
 #index 3
@@ -39,7 +37,6 @@ def decimal_converter(num):
 		place_3 = pow(2, 4)
 		binary_convert = binary_convert + [place_3]
 	elif binary_nums[3] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]
 
 #index 4
@@ -47,7 +44,6 @@ def decimal_converter(num):
 		place_4 = pow(2, 3)
 		binary_convert = binary_convert + [place_4]
 	elif binary_nums[4] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]		
 
 #index 5
@@ -55,7 +51,6 @@ def decimal_converter(num):
 		place_5 = pow(2, 2)
 		binary_convert = binary_convert + [place_5]
 	elif binary_nums[1] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]
 		
 #index 6
@@ -63,7 +58,6 @@ def decimal_converter(num):
 		place_6 = pow(2, 1)
 		binary_convert = binary_convert + [place_6]
 	elif binary_nums[6] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]		
 		
 #index 7
@@ -71,7 +65,6 @@ def decimal_converter(num):
 		place_7 = pow(2, 0)
 		binary_convert = binary_convert + [place_7]
 	elif binary_nums[7] == "0":
-		zero = 0
 		binary_convert = binary_convert + [zero]
 		
 	print binary_convert
