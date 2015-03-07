@@ -10,7 +10,7 @@ def decimal_converter(num):
 	binary_nums = list(num)
 	binary_convert = []
 	zero = 0
-	
+
 #index 0
 	if binary_nums[0] == "1":
 		place_0 = pow(2, 7)
@@ -69,6 +69,16 @@ def decimal_converter(num):
 		
 	print binary_convert
 	print sum(binary_convert)
-		
-binary_num = raw_input("Number (no more than 8 characters): ") [:8]#maximum user input (8 characters)
-decimal_converter(binary_num)
+	
+def binary_converter(num):
+
+print "Conversion from Binary to Decimal or Decimal to Binary"
+choice = raw_input("Your choice: Binary or Decimal: ")
+
+if choice == "Binary" or choice == "binary":
+	binary_num = raw_input("Please input a binary number (no more than 8 characters): ") [:8]#maximum user input (8 characters)
+	decimal_converter(binary_num)
+
+if choice == "Decimal" or choice == "decimal":
+	decimal_num = raw_input("Please input a number: ")
+	binary_converter(decimal_num)
