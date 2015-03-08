@@ -72,13 +72,74 @@ def decimal_converter(num):
 	
 def binary_converter(num):
 
+	decimal_convert = []
+	zero = 0
+
+	if num >= pow(2, 7):
+		place_0 = 1
+		decimal_convert = decimal_convert + [place_0]
+		num = num - pow(2, 7)
+	else:
+		decimal_convert = decimal_convert + [zero]
+	
+	if num >= pow(2,6):
+		place_1 = 1
+		decimal_convert = decimal_convert + [place_1]
+		num = num - pow(2,6)
+	else:
+		decimal_convert = decimal_convert + [zero]
+
+	if num >= pow(2,5):
+		place_2 = 1
+		decimal_convert = decimal_convert + [place_2]
+		num = num - pow(2,5)
+	else:
+		decimal_convert = decimal_convert + [zero]
+		
+	if num >= pow(2,4):
+		place_3 = 1
+		decimal_convert = decimal_convert + [place_3]
+		num = num - pow(2,4)
+	else:
+		decimal_convert = decimal_convert + [zero]
+		
+	if num >= pow(2,3):
+		place_4 = 1
+		decimal_convert = decimal_convert + [place_4]
+		num = num - pow(2,3)
+	else:
+		decimal_convert = decimal_convert + [zero]
+
+	if num >= pow(2,2):
+		place_5 = 1
+		decimal_convert = decimal_convert + [place_5]
+		num = num - pow(2,2)
+	else:
+		decimal_convert = decimal_convert + [zero]
+
+	if num >= pow(2,1):
+		place_6 = 1
+		decimal_convert = decimal_convert + [place_6]
+		num = num - pow(2,1)
+	else:
+		decimal_convert = decimal_convert + [zero]
+
+	if num >= pow(2,0):
+		place_7 = 1
+		decimal_convert = decimal_convert + [place_7]
+		num = num - pow(2,0)
+	else:
+		decimal_convert = decimal_convert + [zero]				
+		
+	print decimal_convert
+
 print "Conversion from Binary to Decimal or Decimal to Binary"
-choice = raw_input("Your choice: Binary or Decimal: ")
+choice = raw_input("Convert to: Binary or Decimal? ")
 
 if choice == "Binary" or choice == "binary":
 	binary_num = raw_input("Please input a binary number (no more than 8 characters): ") [:8]#maximum user input (8 characters)
 	decimal_converter(binary_num)
 
 if choice == "Decimal" or choice == "decimal":
-	decimal_num = raw_input("Please input a number: ")
+	decimal_num =int(raw_input("Please input a number (less than 255): "))
 	binary_converter(decimal_num)
