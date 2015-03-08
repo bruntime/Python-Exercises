@@ -134,12 +134,12 @@ def binary_converter(num):
 	print decimal_convert
 
 print "Conversion from Binary to Decimal or Decimal to Binary"
-choice = raw_input("Convert to: Binary or Decimal? ")
+choice = raw_input("Convert from: Binary or Decimal? ")
 
 if choice == "Binary" or choice == "binary":
-	decimal_num =int(raw_input("Please input a number (less than 255): "))
-	binary_converter(decimal_num)
-
-if choice == "Decimal" or choice == "decimal":	
 	binary_num = raw_input("Please input a binary number (no more than 8 characters): ") [:8]#maximum user input (8 characters)
 	decimal_converter(binary_num)
+
+if choice == "Decimal" or choice == "decimal":
+	decimal_num =int(raw_input("Please input a number (less than 255): "))
+	binary_converter(decimal_num)
