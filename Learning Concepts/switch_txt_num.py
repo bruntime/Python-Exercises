@@ -1,7 +1,7 @@
 #Learn how to implement a dictionary
 #a = 1, b = 2, c = 3, d = 4, .... y = 25, z = 26 
 
-def txt_num(char):
+def txt_num(chars):
 
 	letters = {
 	'a': 1, 
@@ -29,21 +29,20 @@ def txt_num(char):
 	'w':23,
 	'x':24,
 	'y':25,
-	'z':26}
+	'z':26,
+	' ': '.'}
 	
-	user_txt = list(char)
+	user_txt = list(chars)
 	
 	print user_txt
 	
-	# letter_switch = []
+	letter_switch = []
 	
 	for x in user_txt:
-		print letters[x]
+		letter_switch = letter_switch + [letters[x]]
 		
-		#add x to letter_switch list
+	print letter_switch
 
-txt = raw_input("Characters: ")
+txt = raw_input("Text only please: ")
 
 txt_num(txt)
-
-#http://www.greenteapress.com/thinkpython/html/thinkpython012.html
