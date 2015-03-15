@@ -2,12 +2,16 @@
 
 import datetime
 
-month = int(raw_input("Give a month: "))
+# month = int(raw_input("Give a month: "))
 year = int(raw_input("Give a year: "))
 
 days_of_week = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+month = 0
 
-date = days_of_week[datetime.date(year, month, 13).weekday()]
+while month <= 12:
+	month += 1
+	date = days_of_week[datetime.date(year, (month+1), 13).weekday()]
+	print date
 
 if date == "Fri":
 	print "Friday the 13th"
