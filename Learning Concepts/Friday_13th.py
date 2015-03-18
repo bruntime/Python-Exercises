@@ -16,9 +16,10 @@ def check_Fri_13th(user_year):
 		else:
 			print datetime.date(user_year, (month), 13)
 
-attempt = raw_input("Would you like to give a year? (Y or N): ")
+attempt = int(raw_input("How many times would you like to check year? "))
+count = 0
 
-year = int(raw_input("Give a year: "))
-
-while attempt == 'Y' or attempt == 'y': #causes infinite loop, need to figure out how to ask question until a no is received
+while count <= attempt:
+	count += 1
+	year = int(raw_input("Give a year: "))
 	check_Fri_13th(year)
