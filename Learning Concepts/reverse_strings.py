@@ -15,11 +15,12 @@ def reversing_txt(user_input):
 	
 print "Type done when complete"
 
+txt = 0
 count = 0
 
 all_txt = []
 
-while count < 10:
+while txt != 'done':
 	count += 1
 	txt = raw_input("What would you like to say? ")
 	all_txt = all_txt + [txt]
