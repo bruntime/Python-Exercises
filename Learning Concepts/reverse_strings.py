@@ -10,7 +10,8 @@
 
 def reversing_txt(user_input):
 
-	for x in reversed(all_txt):
+	user_input.remove('done')
+	for x in reversed(user_input):
 		print x
 	
 print "Type done when complete"
