@@ -2,26 +2,16 @@
 
 import sys
 
-def Palindrome(str):
+def is_palindrome(txt):
 
-	str = None
-
-	#if str == str.reverse(): #this does not work because Python does not have a built-in reverse function for Strings
-	# new_str = str.split( )
-	# new_str = (reverse(str))
-	# new_str = join(reverse(str))
-	if str == new_str:
-		return "true"
+	if txt == reversed(txt):
+		print "It's a palindrome"
 	else:
-		return "false"
+		print "This is not a palindrome"
 
-txt = raw_input("Test if palindrome: ")		
+user_txt = raw_input("Enter a palindrome: ")
 
-new_txt = txt.split()
-txt_reverse = new_txt.reverse()
-print txt_reverse #message: None - not expected outcome
-
-# Palindrome(txt)
+is_palindrome(user_txt)
 
 # http://www.coderbyte.com/CodingArea/Editor.php?ct=Palindrome&lan=Python
 
