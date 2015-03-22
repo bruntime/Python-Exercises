@@ -16,12 +16,20 @@ print sentence
 
 #4. compare length of each word
 #(INCOMPLETE SECTION)
+#Progress: currently works with 3 words
 
-print sentence[0]
-print sentence[1]
-print sentence[2]
+a = 0
+b = 0
 
-if len(sentence[0]) <= len(sentence[1]):
-	print sentence[1]
-elif len(sentence[0]) > len(sentence[1]):
-	print sentence[0]
+if len(sentence[0]) >= len(sentence[1]):			#sentence 1: 5 char 		sentence 2: 5 char
+	a = sentence[0]											#keep sentence 1
+	# print a
+elif len(sentence[0]) < len(sentence[1]):		#sentence 1: 4 char		sentence 2: 5 char
+	a = sentence[1]											#keep sentence 2
+	# print a
+
+if len(a) >= len(sentence[-1]):
+	print a
+else:
+	b = sentence[-1]
+	print b
