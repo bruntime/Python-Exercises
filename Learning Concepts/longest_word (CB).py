@@ -16,5 +16,12 @@ print sentence
 
 #4. compare length of each word
 #(INCOMPLETE SECTION)
-for x in sentence:
-	print len(x)
+
+print sentence[0]
+print sentence[1]
+print sentence[2]
+
+if len(sentence[0]) <= len(sentence[1]):
+	print sentence[1]
+elif len(sentence[0]) > len(sentence[1]):
+	print sentence[0]
