@@ -4,7 +4,9 @@
  
 import string
  
-user_text = raw_input("Your 3-word sentence here (punctuation accepted): ")
+print "\nProgram to Determine Longest Word in Sentence\n"
+ 
+user_text = raw_input("Write sentence here: ")
 
 #1. remove punctuation marks
 for x in string.punctuation:
@@ -24,4 +26,5 @@ while len(sentence) != 1: #loops until only 1 word left
 	elif len(sentence[0]) < len(sentence[1]):
 		sentence.remove(sentence[0])
 
-print sentence
+for x in sentence:		
+	print "Longest word in sentence:", x
