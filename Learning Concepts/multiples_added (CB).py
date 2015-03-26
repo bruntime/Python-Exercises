@@ -8,9 +8,11 @@ def multipes_3_and_5(num):
 	multiples = []
 
 	if num <= 100:
-		for x in range(0, num)
+		for x in range(0, num):
 			if x % 3 == 0 or x % 5 == 0:
-				print x
+				multiples = multiples + [x]
+				total = sum(multiples)
+		print total
 			
 	#place numbers in list
 	#add numbers in list
