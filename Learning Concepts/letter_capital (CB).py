@@ -6,8 +6,8 @@ def letter_capitalize(str):
 	
 	sentence = [x.capitalize() for x in sentence]
 	
-	for x in sentence:
-		print x 
+	new_sentence = " ".join(sentence)
+	print new_sentence
 
 user_txt = raw_input("Sentence here: ")
 
