@@ -4,9 +4,10 @@ def letter_capitalize(str):
 
 	sentence = str.split(" ")
 	
+	sentence = [x.capitalize() for x in sentence]
+	
 	for x in sentence:
-		word = x.capitalize()
-		print x
+		print x 
 
 user_txt = raw_input("Sentence here: ")
 
