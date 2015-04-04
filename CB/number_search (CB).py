@@ -1,4 +1,4 @@
-from decimal import decimal
+import math
 
 def NumberSearch(str): 
 
@@ -17,7 +17,7 @@ def NumberSearch(str):
 			numbers_from_txt.append(int(x))
 	print sum(numbers_from_txt)
 	print len(characters)
-	print decimal(sum(numbers_from_txt)/len(letters))
+	print math.ceil(float(sum(numbers_from_txt))/len(letters))
     
 user_txt = raw_input('sentence: ')
 
