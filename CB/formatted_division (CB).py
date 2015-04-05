@@ -8,8 +8,7 @@ import string
 def format_division(num1, num2):
 
 	total = float(num1)/float(num2)
-	
-	print("{:.4f}".format(total))
+	print("{:8,.4f}".format(total))
 
 user_num1 = int(raw_input("Number 1: ")) 
 user_num2 = int(raw_input("Number 2: "))
