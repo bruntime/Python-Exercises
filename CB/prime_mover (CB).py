@@ -4,9 +4,9 @@
 def prime_pick(num):
 
 	prime = []
-	
+	prime_total = len(prime)
 	a = 0
-	while a <= num:
+	while len(prime) != 10:
 		a += 1
 		if num % a == 0:
 		 prime = prime + [a]
@@ -14,13 +14,9 @@ def prime_pick(num):
 		return False
 	else:
 		return True
-		
-num = int(raw_input("nth prime pick: "))	
-count = []
-x = 1
+	
+	print prime
+	
+user_num = int(raw_input("nth prime pick: "))	
 
-while len(count) < num+1:
-	x += 1
-	if prime_pick(x):
-		count = count + [x]
-	print count[-1]
+prime_pick(user_num)
