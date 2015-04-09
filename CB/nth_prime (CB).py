@@ -5,23 +5,15 @@ def prime_pick(n):
 
 	prime = []
 	
-	a = 0
-	
-	while a <= n:
-		a += 1
-		if n % a == 0:
-		 prime.append(a)
-	if len(prime) > 2:
-		return False
-	else:
-		return True
+	while len(prime) != n:
+		for num in range(1, 10):
+			if num > 1:
+				for i in range (2, num):
+					if (num % i) == 0:
+						break
+				else:
+					print (num)
 		
 user_num = int(raw_input("nth number: "))
 
-list_num = []	
-
-for num in xrange (1, 10000):
-	if prime_pick(num):
-		list_num = list_num + [num]
-
-print list_num[user_num-1]
+prime_pick(user_num)
