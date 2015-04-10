@@ -12,7 +12,8 @@ def prime_pick(n):
 					if (num % i) == 0:
 						break
 				else:
-					print (num)
+					prime = prime + [num]
+					print prime
 		
 user_num = int(raw_input("nth number: "))
 
