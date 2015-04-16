@@ -1,4 +1,6 @@
 import time
+import Tkinter
+import tkMessageBox
 
 def intro():
 	
@@ -43,13 +45,23 @@ def name_choice(name):
 	print 'Oh,', name, 'is it?'
 	print 'Nice name! I like it!'
 	
-	print '''
-	1- Cool, eh?
-	2- Cute, hm?
-	3- That's not it
-	'''
+	top = Tkinter.Tk()
+	
+	#Popup window for user selection
+	
+	# message = 
+	
+	# print '''
+	# 1- Cool, eh?
+	# 2- Cute, hm?
+	# 3- That's not it
+	# '''
+	
+	# tkMessageBox.showinfo(message)
 	
 	user_selection  = raw_input('Please make a selection (1, 2, or 3)')
+	
+	# top.mainloop()
 	
 	if  user_selection == '1':
 		player_gender = raw_input('So you are a boy? (Y or N)')
