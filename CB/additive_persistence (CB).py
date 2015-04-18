@@ -1,5 +1,7 @@
-# Return a number's additive persistence which is the number of times you must add the digits until you reach a single digit. 
-# For example: if num is 2718 then your program should return 2 because 2 + 7 + 1 + 8 = 18 and 1 + 8 = 9 and you stop at 9
+# Program Name: Additive Persistence
+# Task Description: Return a number's additive persistence which is the number of times you must add the digits until you reach a single digit. 
+# Parameter: N/A
+# Example: If num is 2718 then your program should return 2 because 2 + 7 + 1 + 8 = 18 and 1 + 8 = 9 and you stop at 9
 
 def Add_Persist(num):
 
@@ -16,3 +18,5 @@ def Add_Persist(num):
 number = int(raw_input("Give me a number: "))
 
 Add_Persist(number)
+
+#http://www.coderbyte.com/CodingArea/Editor.php?ct=Additive%20Persistence&lan=Python
