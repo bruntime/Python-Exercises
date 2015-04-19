@@ -1,5 +1,7 @@
-# Take an array of numbers and determine the total number of duplicate entries. 
-# For example if the input is [1, 2, 2, 2, 3] then your program should output 2 because there are two duplicates of one of the elements. 
+# Program Name:  Duplicate Number Count
+# Task Description: Take an array of numbers and determine the total number of duplicate entries. 
+# Parameter: N/A
+# Example: If the input is [1, 2, 2, 2, 3] then your program should output 2 because there are two duplicates of one of the elements. 
 
 def distinct_list(arr):
 
@@ -33,3 +35,5 @@ print list_of_nums
 
 #2) pass list through function
 distinct_list(list_of_nums)
+
+#http://coderbyte.com/CodingArea/Editor.php?ct=Distinct%20List&lan=Python

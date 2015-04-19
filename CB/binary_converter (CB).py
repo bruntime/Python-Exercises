@@ -1,7 +1,7 @@
-#BinaryConverter
-
-#decimal form of the binary value, binary value to decimal form. 
-#Example: if 101 is passed return 5, or if 1000 is passed return 8.
+# Program Name: Binary/Decimal Converter 
+# Task Description: Convert decimal form to binary value, binary value to decimal form
+# Parameter: N/A
+# Example: If 101 is passed return 5, or if 1000 is passed return 8
 
 import math
 
@@ -143,3 +143,5 @@ if choice == "Binary" or choice == "binary":
 if choice == "Decimal" or choice == "decimal":
 	decimal_num =int(raw_input("Please input a number (less than 255): "))
 	binary_converter(decimal_num)
+	
+#http://coderbyte.com/CodingArea/Editor.php?ct=Binary%20Converter&lan=Python	

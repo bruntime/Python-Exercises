@@ -1,6 +1,6 @@
- # take an array of integers and return the minimum number of integers needed to make the contents consecutive from the lowest number to the highest number. 
+# Program Name: Minimum Consecutive Count
+# Task Description: Take an array of integers and return the minimum number of integers needed to make the contents consecutive from the lowest number to the highest number. 
  # Example: For [4, 8, 6] the output should be 2 because two numbers need to be added to the array (5 and 7) to make it from 4 to 8. 
- # Negative numbers may be entered as parameters and no array will have less than 2 elements.
  
 def consecutive(arr):
  

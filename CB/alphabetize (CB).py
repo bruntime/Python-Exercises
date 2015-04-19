@@ -20,3 +20,5 @@ def string_alphabetical_order(word):
 one_word = raw_input("Write word here: ")
 
 string_alphabetical_order(one_word)
+
+#http://www.coderbyte.com/CodingArea/Editor.php?ct=Alphabet%20Soup&lan=Python
