@@ -137,7 +137,7 @@ print "Conversion from Binary to Decimal or Decimal to Binary"
 choice = raw_input("Convert from: Binary or Decimal? ")
 
 if choice == "Binary" or choice == "binary":
-	binary_num = raw_input("Please input a binary number (no more than 8 characters): ") [:8]#maximum user input (8 characters)
+	binary_num = raw_input("Please input a binary number (no more than 8 characters): ") [:8] #maximum user input (8 characters)
 	decimal_converter(binary_num)
 
 if choice == "Decimal" or choice == "decimal":
