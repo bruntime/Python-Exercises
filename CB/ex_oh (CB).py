@@ -3,13 +3,14 @@
 # Parameter: Only these two letters will be entered in the string, no punctuation or numbers. 
 # Example: If str is "xooxxxxooxo" then the output should return false because there are 6 x's and 5 o's.
 
-def ExOh(str):
+def xo_count_check(str):
 
 	count_x = 0
 	count_o = 0
 	
-	count_xo = str
+	count_x_o = str
 
+	#check list for x's and o's
 	for i in list(count_xo):
 		if i == 'x':
 			count_x += 1
@@ -26,8 +27,8 @@ def ExOh(str):
 	else:
 		print 'false'
 		
-txt = raw_input("input as many x's and o's as you'd like - x's and o's only: ")
+user_txt = raw_input("input as many x's and o's as you'd like - x's and o's only: ")
 
-ExOh(txt) 
+xo_count_check(user_txt) 
 
 #http://www.coderbyte.com/CodingArea/Editor.php?ct=Ex%20Oh&lan=Python
