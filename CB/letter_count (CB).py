@@ -14,10 +14,12 @@ def LetterCount(txt):
 	print characters
 	
 	count = 0
-	
+
 	#find repeating characters in each set
-	for y in characters:
-			
+	for z in characters:
+		z.sort()
+		print z
+		
 user_txt = raw_input("sentence: ")
 
 LetterCount(user_txt)
