@@ -1,6 +1,6 @@
- # have the function LongestWord(sen) take the sen parameter being passed and return the largest word in the string. 
- #If there are two or more words that are the same length, return the first word from the string with that length. 
- #Ignore punctuation and assume sen will not be empty.
+# Program Name: Longest Word Returned
+# Parameter: Ignore punctuation and assume sen will not be empty.
+# Example: N/A
  
 import string
 
@@ -32,3 +32,5 @@ print "\nProgram to Determine Longest Word in Sentence\n"
 user_text = raw_input("Write sentence here: ")
 
 LongestWord(user_text)
+
+#http://coderbyte.com/CodingArea/Editor.php?ct=Longest%20Word&lan=Python
