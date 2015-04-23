@@ -1,4 +1,5 @@
 # Program Name: Longest Word Returned
+# Task Description: Return the largest word in a string. If there are two or more words that are the same length, return the first word from the string with that length. 
 # Parameter: Ignore punctuation and assume sen will not be empty.
 # Example: N/A
  
