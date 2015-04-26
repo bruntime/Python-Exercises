@@ -7,13 +7,10 @@
 def filter_long_words(n, sentence):
 
 	txt = sentence.split(" ")
-	print txt
-
-	x = -1
 	
-	while x != txt[-1]:
-		x += 1
-		print len(txt[x])	
+	for x in txt:
+		if len(x) > n:
+			print x
 	
 user_txt = raw_input("Sentence: ")
 user_num = int(raw_input("Number: "))
