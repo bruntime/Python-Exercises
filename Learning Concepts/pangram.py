@@ -7,15 +7,12 @@
 def pangram(sentence):
 
 	letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-	characters = [x for x in sentence.split()]
+	# characters = [x for x in sentence.split()]
 	
-	for n in characters:
-		for n in letters:
-			#compare characters and letters
-			#if all letters represented in characters
-				print "Is a pangram"
-			else:
-				print "Not a pangram"
+	if all ((x in letters) for x in sentence):
+		print "Is a pangram"
+	else:
+		print "Not a pangram"
 	
 user_txt = raw_input("Sentence: ")
 pangram(user_txt)
