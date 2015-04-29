@@ -5,10 +5,18 @@ def half(num):
 
 	nums = []
 	
-	while num > 0.02:
+	while num > 0.5:
 		nums.append(num)
 		num = num/2
-	print nums
+	
+	#print on separate lines
+	for x in nums:
+		print x
+	
+	print '*' * 80
+	
+	# print without list brackets (converts float to string)
+	print ', '.join(map(str, nums))
 
 user_num = float(raw_input("number: "))
 half(user_num)
