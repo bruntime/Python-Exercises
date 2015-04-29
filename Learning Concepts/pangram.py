@@ -6,15 +6,23 @@
 
 def pangram(sentence):
 
+	sentence = sentence.replace(' ', '')
 	letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-	# characters = [x for x in sentence.split()]
+	characters = list(sentence)
 	
-	if all ((x in letters) for x in sentence):
+	a = -1
+	count = 0
+	while letters[a] in characters:
+		a += 1
+		count += 1
+		break
+		
+	if count == 26:
 		print "Is a pangram"
 	else:
-		print "Not a pangram"
+		print "Is not a pangram"
 	
-user_txt = raw_input("Sentence: ")
+user_txt = raw_input("Sentence: ").lower()
 pangram(user_txt)
 
 #http://www.ling.gu.se/~lager/python_exercises.html
