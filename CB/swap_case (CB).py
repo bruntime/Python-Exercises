@@ -3,19 +3,15 @@
 # Parameter: Let numbers and symbols stay the way they are. 
 # Example: For "Hello World" the output should be hELLO wORLD.
 
-# def SwapCase(str):
+def SwapCase(sentence):
+   
+    uppercase = [x for x in sentence if x.isupper()]
+    lowercase = [x for x in sentence if x.islower()]
 
-s = "One Two ThRee"
-
-words = s.split()
-
-a = 0
-
-while a < len(words):
-	a += 1
-	for x in words:
-		x.split()
-		if x.lower():
-			x.upper() #switch case
-		if x.upper:
-			x.lower() #switch case
+    for x in uppercase:
+        print x.lower()
+    for x in lowercase:
+        print x.upper()
+       
+user_txt = raw_input("Sentence: ")
+SwapCase(user_txt)
