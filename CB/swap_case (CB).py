@@ -9,14 +9,11 @@ def SwapCase(txt):
 
 	swapped_letters = []
 	
-	a = -1
-	
-	while a < 20:
-		a += 1
-		if sentence[a].isupper():
-			swapped_letters += [sentence[a].lower()]
+	for x in sentence:
+		if x.isupper():
+			swapped_letters += [x.lower()]
 		else:
-			swapped_letters += [sentence[a].upper()]
+			swapped_letters += [x.upper()]
 	
 	sentence = "".join(x for x in swapped_letters)
 	
