@@ -10,20 +10,15 @@ def Power_of_2(num):
 	nums = []
 
 	for i in range (1, num + 1):
-	
 		power_check = math.pow(i, 2)
-	
-	for i in list(range(1, num+1)):
-		power_check = math.pow(i, 2)
+		print (power_check)
 		
-		if num in list:
-		print num, power_check
-		print "This is a power of 2"
+	if num in power_check:
+		print ("Is a power of 2")
 	else:
-		print "This is not a power of 2"
-		print num, power_check
-
-check_num = int(raw_input("Check if number is power of 2: "))
+		print ("Is not a power of 2")
+		
+check_num = int(input("Check if number is power of 2: "))
 
 Power_of_2(check_num)
 
