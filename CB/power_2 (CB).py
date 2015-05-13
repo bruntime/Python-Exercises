@@ -11,8 +11,8 @@ def Power_of_2(num):
 	user_num = float(num)
 	nums = []
 	
-	for i in range (1, num + 1):
-		power_check = (math.pow(i, 2))
+	for i in range (0, 20):
+		power_check = (math.pow(2, i))
 		nums = nums + [power_check]
 	print (nums)
 
