@@ -7,13 +7,16 @@ import math
 
 def Power_of_2(num):
 
+	#make user input into a float for compatibility with power_check values (which are returned as float)
+	user_num = float(num)
 	nums = []
-
+	
 	for i in range (1, num + 1):
-		power_check = math.pow(i, 2)
-		print (power_check)
-		
-	if num in power_check:
+		power_check = (math.pow(i, 2))
+		nums = nums + [power_check]
+	print (nums)
+
+	if user_num in nums:
 		print ("Is a power of 2")
 	else:
 		print ("Is not a power of 2")
