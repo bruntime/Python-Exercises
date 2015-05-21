@@ -18,7 +18,7 @@ def letter_change(str):
 	a = 0 #for elements in alphabet list
 	b = 1 #for dictionary value
 	
-	while  a<= alphabet[-1]:
+	while a < 20:
 		a += 1
 		b += 1
 		#add keys and corresponding values to the dictionary
