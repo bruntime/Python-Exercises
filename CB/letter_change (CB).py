@@ -7,6 +7,7 @@ import string
 
 def letter_change(str):
 
+	sentence = str.replace(' ', '')
 	sentence = list(str)
 	print (sentence)
 
@@ -22,9 +23,11 @@ def letter_change(str):
 	for y in changed_txt:
 		if y == 'a' or y == 'e' or y == 'i' or y == 'o' or y == 'u':	
 			changed_txt[changed_txt.index(y)] = y.upper()
-		
-	print (changed_txt)
+
+	# changed_txt = ''.join([str(x) for x in changed_txt])
 	
+	print (changed_txt)
+			
 user_txt = input("Sentence: ").lower()
 letter_change(user_txt)
 

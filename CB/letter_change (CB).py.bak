@@ -9,21 +9,21 @@ def letter_change(str):
 
 	sentence = list(str)
 	print (sentence)
+
+	letters = {'a': 'b',  'b': 'c',  'c': 'd',  'd': 'e',  'e': 'f', 'f': 'g', 'g': 'h', 'h': 'i', 'i': 'j', 'j': 'k', 'k': 'l', 'l': 'm', 'm': 'n', 'n': 'o', 'o': 'p', 'p': 'q', 'q': 'r', 'r': 's', 's': 't', 't': 'u', 'u': 'v', 'v': 'w', 'w': 'x', 'x': 'y', 'y': 'z', 'z': 'a'}
 	
-	alphabet = list(string.ascii_lowercase)
-	print (alphabet)
+	changed_txt = []
 	
-	letters = {}
+	#replace letters with corresponding value
+	for x in sentence:
+		changed_txt = changed_txt + [letters[x]]
 	
-	a = 0 #for elements in alphabet list
-	b = 1 #for dictionary value
-	
-	while a < 20:
-		a += 1
-		b += 1
-		#add keys and corresponding values to the dictionary
-		letters[alphabet[a]] = b
-	print (letters)
+	#capitalize vowels
+	for y in changed_txt:
+		if y == 'a' or y == 'e' or y == 'i' or y == 'o' or y == 'u':	
+			changed_txt[changed_txt.index(y)] = y.upper()
+		
+	print (changed_txt)
 	
 user_txt = input("Sentence: ").lower()
 letter_change(user_txt)
