@@ -8,9 +8,7 @@ import itertools
 def permutation(num):
 
 	numbers = list(num)
-	
-	for x in list(itertools.permutations(numbers)):
-		print (x)
+	print (numbers)
 	
 user_txt = input("Number: ")
 permutation(user_txt)
