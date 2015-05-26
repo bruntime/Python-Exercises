@@ -7,15 +7,18 @@ import itertools
 
 def permutation(num):
 
-	numbers = list(num)
-	print ','.join(numbers)
+	numbers = list(user_txt)
+	numbers = "".join(numbers)
+	print numbers
 	
-	num_perm = []
+	num_perms = []
 	
-	for x in list(itertools.permutations(numbers)):
-		num_perm += num_perm + [x]
+	for x in set(itertools.permutations(numbers)):
+		num_perms = num_perms + [(x)]
 	
-	print (num_perm)
+	# for y in num_perms:
 	
-user_txt = input("Number: ")
+	print num_perms
+	
+user_txt = raw_input("Number: ")
 permutation(user_txt)
