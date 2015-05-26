@@ -11,14 +11,12 @@ def permutation(num):
 	numbers = "".join(numbers)
 	print numbers
 	
-	num_perms = []
-	
-	for x in set(itertools.permutations(numbers)):
-		num_perms = num_perms + [(x)]
-	
-	# for y in num_perms:
-	
+	num_perms = list(itertools.permutations(numbers))
 	print num_perms
 	
+	for y in num_perms:
+		for z in y:
+			print z
+		
 user_txt = raw_input("Number: ")
 permutation(user_txt)
