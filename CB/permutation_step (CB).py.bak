@@ -5,12 +5,25 @@
 
 import itertools
 
+a=[1,2,3]
+permutations = set(itertools.permutations(a))
+
+for perm in permutations:
+    print("%s%s%s" % perm)
+
 def permutation(num):
 
-	numbers = list(num)
+	numbers = list(user_txt)
+	print numbers
 	
-	for x in list(itertools.permutations(numbers)):
-		print (x)
+	num_perms = []
 	
-user_txt = input("Number: ")
+	for x in set(itertools.permutations(numbers)):
+		num_perms = num_perms + [(x)]
+	
+	for y in num_perms:
+	
+	print num_perms
+	
+user_txt = raw_input("Number: ")
 permutation(user_txt)
