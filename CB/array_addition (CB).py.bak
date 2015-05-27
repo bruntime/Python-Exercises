@@ -8,5 +8,8 @@ def addition(arr):
 	numbers = arr
 	print numbers
 	
+	sum_arr = sum(numbers)
+	print sum_arr
+	
 user_txt = list(input("Numbers: "))
 addition(user_txt)

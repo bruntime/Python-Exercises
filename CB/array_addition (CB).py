@@ -6,6 +6,7 @@
 def addition(arr):
 
 	numbers = arr
+	numbers.sort()
 	print numbers
 	
 	sum_arr = sum(numbers)
