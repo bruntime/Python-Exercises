@@ -13,23 +13,21 @@ def addition(arr):
 	b = 0
 
 	#check if elements are the same - print error message	
-	while numbers[a] != numbers[b]:
+	while numbers[b] != numbers[-1]:
 		a += 1
 		b += 1
 		if numbers[a] == numbers[b]:
 			print "There are duplicates in this list"
-	
-	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
-	print "smaller numbers:", smaller_numbers
-	
-	#check combination of numbers to equal largest number
+			break
 	
 	for x in numbers:
 		if x == 0:
 			print "true"
 	
-	sum_arr = sum(numbers)
-	print sum_arr
+	#TO WORK ON: check combination of numbers added to equal largest number
+	
+	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
+	print "smaller numbers:", smaller_numbers
 
 #automatically checks to see if list is empty	
 user_txt = list(input("Numbers: "))	

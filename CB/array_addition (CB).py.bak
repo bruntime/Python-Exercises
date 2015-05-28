@@ -9,15 +9,16 @@ def addition(arr):
 	numbers.sort()
 	print numbers
 		
-	a = 0
+	a = -1
 	b = 0
 
 	#check if elements are the same - print error message	
-	while numbers[a] != numbers[b]:
+	while numbers[b] != numbers[-1]:
 		a += 1
 		b += 1
 		if numbers[a] == numbers[b]:
 			print "There are duplicates in this list"
+			break
 	
 	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
 	print "smaller numbers:", smaller_numbers
