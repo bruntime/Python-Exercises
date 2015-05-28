@@ -9,6 +9,17 @@ def addition(arr):
 	numbers.sort()
 	print numbers
 	
+	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
+	print "smaller numbers:", smaller_numbers
+	
+	#check combination of numbers to equal largest number
+	#check if array is empty - print error message
+	#check if elements are the same - print error message
+	
+	for x in numbers:
+		if x == 0:
+			print "true"
+	
 	sum_arr = sum(numbers)
 	print sum_arr
 	
