@@ -8,13 +8,21 @@ def addition(arr):
 	numbers = arr
 	numbers.sort()
 	print numbers
+		
+	a = -1
+	b = 0
+
+	#check if elements are the same - print error message	
+	while numbers[a] != numbers[b]:
+		a += 1
+		b += 1
+		if numbers[a] == numbers[b]:
+			print "There are duplicates in this list"
 	
 	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
 	print "smaller numbers:", smaller_numbers
 	
 	#check combination of numbers to equal largest number
-	#check if array is empty - print error message
-	#check if elements are the same - print error message
 	
 	for x in numbers:
 		if x == 0:
@@ -22,6 +30,7 @@ def addition(arr):
 	
 	sum_arr = sum(numbers)
 	print sum_arr
-	
-user_txt = list(input("Numbers: "))
+
+#automatically checks to see if list is empty	
+user_txt = list(input("Numbers: "))	
 addition(user_txt)
