@@ -21,7 +21,11 @@ def addition(arr):
 		if numbers[a] == numbers[b]:
 			print "There are duplicates in this list"
 			break
-
+	
+	for x in numbers:
+		if x == 0:
+			print "true"
+	
 	#TO WORK ON: check combination of numbers added to equal largest number
 	
 	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
