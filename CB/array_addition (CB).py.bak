@@ -22,18 +22,15 @@ def addition(arr):
 			print "There are duplicates in this list"
 			break
 	
-	for x in numbers:
-		if x == 0:
-			print "true"
-	
 	#TO WORK ON: check combination of numbers added to equal largest number
 	
-	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
-	print "smaller numbers:", smaller_numbers
-	
-	combos = list(chain(*(combinations(smaller_numbers, i) for i in range(1, 1 + len(smaller_numbers)))))
+	combos = list(chain(*(combinations(numbers, i) for i in range(1, 1 + len(numbers)))))
 
-	print combos
+	combos_values = combos[len(numbers):]
+	
+	print combos_values
+	# for x in combos:
+		# print sum(x)
 	
 #automatically checks to see if list is empty	
 user_txt = list(input("Numbers: "))	

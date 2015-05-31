@@ -26,7 +26,10 @@ def addition(arr):
 	
 	combos = list(chain(*(combinations(numbers, i) for i in range(1, 1 + len(numbers)))))
 
-	for x in combos:
+	combos_values = combos[len(numbers):]
+	
+	print combos_values
+	for x in combos_values:
 		print sum(x)
 	
 #automatically checks to see if list is empty	
