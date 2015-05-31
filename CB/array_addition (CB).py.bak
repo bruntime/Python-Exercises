@@ -29,8 +29,8 @@ def addition(arr):
 	combos_values = combos[len(numbers):]
 	
 	print combos_values
-	# for x in combos:
-		# print sum(x)
+	for x in combos_values:
+		print sum(x)
 	
 #automatically checks to see if list is empty	
 user_txt = list(input("Numbers: "))	

@@ -9,7 +9,7 @@ def addition(arr):
 
 	numbers = arr
 	numbers.sort()
-	print numbers
+	print "Sorted Numbers: ", numbers
 		
 	a = -1
 	b = 0
@@ -28,10 +28,20 @@ def addition(arr):
 
 	combos_values = combos[len(numbers):]
 	
-	print combos_values
-	for x in combos_values:
-		print sum(x)
+	sum_combos = []
 	
+	print "Combinations:", combos_values
+	
+	for x in combos_values:
+		sum_combos = sum_combos + [sum(x)]
+	
+	print "Sum of Combinations", sum_combos
+	
+	if numbers[-1] in sum_combos:
+		print "true"
+	else:
+		print "false"
+		
 #automatically checks to see if list is empty	
 user_txt = list(input("Numbers: "))	
 addition(user_txt)
