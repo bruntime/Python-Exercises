@@ -3,6 +3,8 @@
 # Parameter: The array will not be empty, will not contain all the same elements, and may contain negative numbers.
 # Example: If arr contains [4, 6, 23, 10, 1, 3] the output should return true because 4 + 6 + 10 + 3 = 23. 
 
+from itertools import chain, combinations
+
 def addition(arr):
 
 	numbers = arr
@@ -28,7 +30,11 @@ def addition(arr):
 	
 	smaller_numbers = numbers[:-1] #all numbers except largest, combination of numbers to equal largest
 	print "smaller numbers:", smaller_numbers
+	
+	combos = list(chain(*(combinations(smaller_numbers, i) for i in range(1, 1 + len(smaller_numbers)))))
 
+	print combos
+	
 #automatically checks to see if list is empty	
 user_txt = list(input("Numbers: "))	
 addition(user_txt)
