@@ -1,0 +1,14 @@
+#Program:
+#Description: accept a string as input
+#Count user input 
+
+txt = []
+user_txt = raw_input("Text: ")
+
+while len(txt) != 15:
+	txt = txt + [user_txt]
+	if user_txt == "":
+		break
+
+print txt
+print len(txt)
