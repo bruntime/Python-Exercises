@@ -16,12 +16,19 @@ def check_digits(str):
 				
 	if len(numbers_in_txt) > 0:
 		print sum(numbers_in_txt)
-
+	numbers_in_txt = []
+	
 def check_palindrome(str):
 			
+	numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+	
 	letters = str
 	reversed_txt = letters[::-1]
-				
+	
+	for x in numbers:
+		if x in letters:
+			return
+	
 	if letters.lower() == reversed_txt.lower():
 		print 'palindrome'
 	else:
@@ -34,11 +41,11 @@ while count <= 14:
 	user_txt = raw_input("Type here: ")
 	print user_txt
 	if check_digits(user_txt):
-		print user_txt
+		print "check", user_txt
 	elif check_palindrome(user_txt):
 		print user_txt
 	elif user_txt == "":
 		count -= 1
 		break
-
+		
 print "There were",  count, "input(s)"
