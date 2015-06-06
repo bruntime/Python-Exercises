@@ -22,7 +22,7 @@ def check_palindrome(str):
 			
 	numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 	
-	letters = str
+	letters = str.replace(" ", "")
 	reversed_txt = letters[::-1]
 	
 	for x in numbers:
