@@ -2,37 +2,43 @@
 #If input contains digits (0 -9) display the sum of digits and ignore the other characters
 #If input is palindrome display the string "palindrome", otherwise print the input in reverse order (case sensitive)
 
-#function to check if string contains digits
-def check_digits(str):
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-	numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+def check_digits(str, num):
+
+	txt = list(str)
 	numbers_in_txt = [] #list for numbers in user input
 
-	for x in str:
-		for y in numbers:
-			if x == y in numbers:
+	for x in txt:
+		for y in num:
+			if x == y in num:
 				numbers_in_txt.append(int(x))
 				
 	if len(numbers_in_txt) > 0:
 		print sum(numbers_in_txt)
-	numbers_in_txt = []
 
-txt = [] #list for user input
+def check_palindrome(str, num):
+	
+	letters = str.lower()
+	reversed_txt = letters[::-1]
 
-#accept string until 15 strings accepted or user input is empty
-while len(txt) != 15:
-	user_txt = raw_input("Test: ")
-	txt = txt + [user_txt]
+	if letters == reversed_txt:
+		print 'palindrome'
+	else:
+		print reversed_txt
+
+count = 0
+
+while count <= 14:
+	count += 1
+	user_txt = raw_input("Type here: ")
+	print user_txt
+	if check_digits(user_txt, numbers) is True:
+		print user_txt
+	if check_palindrome(user_txt, numbers) is True:
+		print user_txt
 	if user_txt == "":
-		txt.pop()
+		count -= 1
 		break
 
-count = -1
-
-for x in txt:
-	count += 1
-	print txt[count]
-	if check_digits(x):
-		print x
-
-print "There were",  len(txt), "input(s)"
+print "There were",  count, "input(s)"
