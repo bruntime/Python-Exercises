@@ -1,4 +1,4 @@
-#Check user input for: 1) max 15 strings, 2) user input empty, 3) contains digits, 4) palindrome
+#Check user input for: 1) limit of 15 strings, 2) user input empty, 3) contains digits, 4) palindrome
 #If input contains digits (0 -9) display the sum of digits and ignore the other characters
 #If input is palindrome display the string "palindrome", otherwise print the input in reverse order (case sensitive)
 
@@ -16,23 +16,22 @@ def check_digits(str):
 				
 	if len(numbers_in_txt) > 0:
 		print sum(numbers_in_txt)
-	numbers_in_txt = []
 	
 def check_palindrome(str):
 			
 	numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 	
-	letters = str.replace(" ", "")
-	reversed_txt = letters[::-1]
+	text = str.replace(" ", "")
+	reversed_txt = text[::-1]
 	
 	for x in numbers:
-		if x in letters:
+		if x in text:
 			return
 	
-	if letters.lower() == reversed_txt.lower():
+	if text.lower() == reversed_txt.lower():
 		print 'palindrome'
 	else:
-		print reversed_txt.join(" ")
+		print str[::-1]
 
 count = 0
 
