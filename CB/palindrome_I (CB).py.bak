@@ -3,12 +3,8 @@
 # Parameter: Punctuation and numbers will not be part of the string.
 # Example: "racecar" is also "racecar" backwards.
 
-import string
-
 def is_palindrome(str):
 
-	str = ''.join([x for x in str if x.isalpha()])
-	print str
 	reverse_str = str[::-1]
 	
 	if str == reverse_str:
