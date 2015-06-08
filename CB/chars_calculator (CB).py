@@ -12,8 +12,10 @@ def calculator(str):
 		for y in chars:
 			if x == y:
 				txt_char = txt_char + [y]
-	
-	print txt_char
+				txt = ",".join(txt_char)
+				txt = txt.replace(",", "")
+				
+	print txt
 
 user_txt = raw_input("text: ")
 calculator(user_txt)
