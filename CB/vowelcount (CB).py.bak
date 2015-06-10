@@ -9,8 +9,10 @@ def VowelCount(str):
 		for y in vowels:
 			if x == y:
 				count += 1
+				vowels_in_str = vowels_in_str + [y]
 
-	print count
+	print len(vowels_in_str)
 	
 usertxt = raw_input("Some random text: ")
+	
 VowelCount(usertxt) 
