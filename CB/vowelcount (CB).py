@@ -3,13 +3,14 @@ def VowelCount(str):
 	vowels = ['a', 'e', 'i', 'o', 'u']
 	vowels_in_str = []
 
-	for x in vowels:
-		if x in str:
-			vowels_in_str = vowels_in_str + [x]
+	count = 0
 	
-	print vowels_in_str
-	print len(vowels_in_str)
+	for x in str:
+		for y in vowels:
+			if x == y:
+				count += 1
+
+	print count
 	
 usertxt = raw_input("Some random text: ")
-	
-VowelCount(usertxt) 
+VowelCount(usertxt)
