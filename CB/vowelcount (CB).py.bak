@@ -12,4 +12,4 @@ def VowelCount(str):
 	
 usertxt = raw_input("Some random text: ")
 	
-VowelCount(usertxt) 
+VowelCount(usertxt)  
