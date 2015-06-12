@@ -6,7 +6,6 @@
 user_txt = raw_input("Sentence: ")
 reversed_txt = user_txt.split()
 
-for x in reversed(reversed_txt):
-	print x
-	
+print reversed_txt[::-1]
+		
 #http://www.practicepython.org/exercise/2014/05/21/15-reverse-word-order.html
