@@ -4,13 +4,9 @@
 #Example: N/A
 
 import requests
-from bs4 import BeautifulSoup
 
 url = "http://www.nytimes.com/"
-r = requests.get(url)
+r = requests.get(http://www.nytimes.com/)
 r_html = r.text
 
-soup = BeautifulSoup(r_html)
-title = soup.find('span', 'articletitle').string
-
-#http://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html
+http://www.practicepython.org/exercise/2014/06/06/17-decode-a-web-page.html
