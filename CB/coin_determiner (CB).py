@@ -17,7 +17,7 @@ def coin_combinations (num):
 		if sum(x) == num:
 			count += 1
 			print x
-
+			print "Coin count", len(x)		
 	print count
 
 user_txt = int(raw_input("Number (between 1 - 25): "))

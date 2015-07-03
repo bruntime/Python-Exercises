@@ -5,12 +5,21 @@
 
 from itertools import combinations
 
-num = 16
+def coin_combinations (num):
 
-coins = [1, 5, 7, 9, 11]
+	coins = [1, 5, 7, 9, 11]
 
-coin_combo = sum([map(list, combinations(coins, i)) for i in range(len(coins) + 1)], [])
+	coin_combo = sum([map(list, combinations(coins, i)) for i in range(len(coins) + 1)], [])
 
-for x in coin_combo:
-	if sum(x) == num:
-		print x
+	count = 0
+
+	for x in coin_combo:
+		if sum(x) == num:
+			count += 1
+			print x
+
+	"Coin count", len(x)		
+	print count
+
+user_txt = int(raw_input("Number (between 1 - 25): "))
+coin_combinations(user_txt)
