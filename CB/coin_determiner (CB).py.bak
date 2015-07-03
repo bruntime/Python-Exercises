@@ -5,9 +5,11 @@
 
 from itertools import combinations
 
+num = 16
+
 coins = [1, 5, 7, 9, 11]
 
-output = sum([map(list, combinations(coins, i)) for i in range(len(coins) + 1)], [])
+coin_combo = sum([map(list, combinations(coins, i)) for i in range(len(coins) + 1)], [])
 
-print output
-
+for x in coin_combo:
+	print x

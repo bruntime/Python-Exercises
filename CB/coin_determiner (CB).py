@@ -12,4 +12,5 @@ coins = [1, 5, 7, 9, 11]
 coin_combo = sum([map(list, combinations(coins, i)) for i in range(len(coins) + 1)], [])
 
 for x in coin_combo:
-	print x
+	if sum(x) == num:
+		print x
