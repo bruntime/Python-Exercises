@@ -8,8 +8,12 @@ from itertools import combinations
 def coin_combinations (num):
 
 	coins = [1, 5, 7, 9, 11]
+	x = 3
+	
+	coins_tripled = []
+	coins_tripled.append(coins * x)
 
-	coin_combo = sum([map(list, combinations(coins, i)) for i in range(len(coins) + 1)], [])
+	coin_combo = sum([map(list, combinations(coins_tripled, i)) for i in range(len(coins_tripled) + 1)], [])
 
 	count = 0
 
