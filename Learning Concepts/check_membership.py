@@ -8,6 +8,14 @@ def is_member( value_check, values_list):
 	list_to_check = values_list
 	value_to_check = value_check
 	
+	count = -1
+	
+	while count != len(list_to_check):
+		count += 1
+		if value_to_check != list_to_check[count]:
+			print "False"
+		else:
+			print "True"
 	
 user_list = []
 user_input = 0
