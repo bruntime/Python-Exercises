@@ -1,0 +1,21 @@
+body
+{
+background-color:red;
+text-align:center;
+}
+
+header
+{
+border:2px solid;
+border-radius:25px;
+}
+
+#mainHeader
+{
+border:10px dotted;
+}
+
+.videoSection
+{
+background-color:yellow;
+}
