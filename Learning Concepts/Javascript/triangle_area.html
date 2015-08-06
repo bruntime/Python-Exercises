@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script language="JavaScript" src="areaTriangle.js"></script>
 	</head>
 <title>Triangle Area Calculator</title>
 
@@ -10,14 +11,13 @@
 	<p>Write a JavaScript program to find the area of a triangle.</p>
 
 	<form>
-	Side 1: <input type="text" name="side1"><br><br>
-	Side 2: <input type="text" name="side2"><br><br>
-	Side 3: <input type="text" name="side3"><br><br>
-	Area: <input type="text" name="area"><br><br>
-	<input type="submit" value="Calculate" onclick="calculate()">
+	Side 1: <input type="text" id="side1"><br><br>
+	Side 2: <input type="text" id="side2"><br><br>
+	Side 3: <input type="text" id="side3"><br><br>
+	Area: <input type="text" id="area"><br><br>
+	<input type="button" onclick="calculate()" value="Calculate">
 	</form>
 	</section>
-	<script src="areaTriangle.js" type="text/javascript"></script>
 </body>
 </html>
 
